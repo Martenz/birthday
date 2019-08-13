@@ -5,7 +5,7 @@ $(window).load(function(){
 $('document').ready(function(){
 		var vw;
 		$(window).resize(function(){
-			 vw = $(window).width()/3;
+			 vw = $(window).width()/4;
 			$('#b1,#b2,#b3,#b4,#b5,#b6,#b7').stop();
 			$('#b11').animate({top:240, left: vw-350},500);
 			$('#b22').animate({top:240, left: vw-250},500);
@@ -24,7 +24,7 @@ $('document').ready(function(){
 		$('#bulb_pink').addClass('bulb-glow-pink');
 		$('#bulb_orange').addClass('bulb-glow-orange');
 		$('body').addClass('peach');
-		$(this).fadeOut('slow').delay(5000).promise().done(function(){
+		$(this).fadeOut('slow').delay(3000).promise().done(function(){
 			$('#play').fadeIn('slow');
 		});
 	});
@@ -39,14 +39,14 @@ $('document').ready(function(){
 		$('#bulb_orange').addClass('bulb-glow-orange-after');
 		$('body').css('backgroud-color','#FFF');
 		$('body').addClass('peach-after');
-		$(this).fadeOut('slow').delay(6000).promise().done(function(){
+		$(this).fadeOut('slow').delay(4000).promise().done(function(){
 			$('#bannar_coming').fadeIn('slow');
 		});
 	});
 
 	$('#bannar_coming').click(function(){
 		$('.bannar').addClass('bannar-come');
-		$(this).fadeOut('slow').delay(6000).promise().done(function(){
+		$(this).fadeOut('slow').delay(4000).promise().done(function(){
 			$('#balloons_flying').fadeIn('slow');
 		});
 	});
@@ -140,7 +140,7 @@ $('document').ready(function(){
 
 		
 	$('#wish_message').click(function(){
-		 vw = $(window).width()/2;
+		 vw = $(window).width()/4;
 
 		$('#b1,#b2,#b3,#b4,#b5,#b6,#b7').stop();
 		$('#b1').attr('id','b11');
