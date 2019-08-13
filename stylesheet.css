@@ -8,6 +8,17 @@ body {
 	transition:background-color linear 5s;
 	overflow-x:hidden;
 }
+
+@media only screen and (max-width: 600px) {
+	#bulb_container{
+	    width: 10%;
+	    transform: scale(0.4);
+	    position: absolute;
+	    margin: 25% 0 0px 25%;
+	    text-align: center;
+	}
+}
+
 .container {
 	display: none;
 }
